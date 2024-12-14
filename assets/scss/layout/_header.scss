@@ -1,3 +1,42 @@
 .header {
-  
+  &_in {
+    padding: 10px 0;
+
+    @include tablet-768() {
+      padding: 14px 0;
+    }
+  }
+
+  &_logo {
+    width: 221px;
+
+    @include tablet-768() {
+      width: 208px;
+    }
+  }
+
+  &_phone {
+    gap: 12px;
+
+    img {
+      width: 15px;
+      height: 15px;
+
+      @include tablet-768 () {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20.51px;
+      color: $color-green-light;
+
+      @include tablet-768 () {
+        display: none;
+      }
+    }
+  }
 }
