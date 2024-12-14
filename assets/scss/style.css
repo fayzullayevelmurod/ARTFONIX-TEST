@@ -422,6 +422,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .header_in {
     padding: 14px 0;
+    gap: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -593,7 +594,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .footer_logo {
   display: none;
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .footer_logo {
     display: flex;
     justify-content: flex-end;
@@ -613,7 +614,7 @@ p, h1, h2, h3, h4, h5, h6 {
     line-height: 13px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .footer_bottom_text {
     display: flex;
     justify-content: flex-end;

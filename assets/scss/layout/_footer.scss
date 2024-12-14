@@ -75,7 +75,7 @@
   &_logo {
     display: none;
 
-    @include mobile-380() {
+    @include mobile-480() {
       display: flex;
       justify-content: flex-end;
       margin-left: auto;
@@ -94,7 +94,7 @@
       line-height: 13px;
     }
 
-    @include mobile-380() {
+    @include mobile-480() {
       display: flex;
       justify-content: flex-end;
     }
