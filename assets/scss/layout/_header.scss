@@ -45,6 +45,7 @@
       line-height: 20.51px;
       color: $color-white;
       position: relative;
+      @include transition();
 
       svg {
         position: absolute;
@@ -54,8 +55,22 @@
         margin: auto;
         display: none;
 
+        path {
+          @include transition();
+        }
+
         @include tablet-768() {
           display: flex;
+        }
+      }
+
+      &:hover {
+        color: $color-green-light;
+
+        svg {
+          path {
+            fill: $color-green-light;
+          }
         }
       }
     }

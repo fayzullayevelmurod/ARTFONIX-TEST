@@ -1,4 +1,10 @@
 .footer {
+  margin-top: 86px;
+
+  @include tablet-768 {
+    margin-top: 46px;
+  }
+
   &_in {
     border-top: 0.5px solid $color-white;
     padding: 68px 0 46px 0;
@@ -40,6 +46,10 @@
         font-weight: 450;
         line-height: 17.5px;
         color: $color-white-10;
+        @include transition();
+        &:hover {
+          color: $color-green-light;
+        }
 
 
         @include tablet-768() {

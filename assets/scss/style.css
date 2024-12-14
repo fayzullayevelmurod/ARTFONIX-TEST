@@ -461,6 +461,7 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 20.51px;
   color: #FFFFFF;
   position: relative;
+  transition: 0.3s linear;
 }
 .header_nav a svg {
   position: absolute;
@@ -470,10 +471,19 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: auto;
   display: none;
 }
+.header_nav a svg path {
+  transition: 0.3s linear;
+}
 @media (max-width: 768px) {
   .header_nav a svg {
     display: flex;
   }
+}
+.header_nav a:hover {
+  color: #DFFA70;
+}
+.header_nav a:hover svg path {
+  fill: #DFFA70;
 }
 .header_logo {
   width: 221px;
@@ -519,6 +529,93 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.contact {
+  margin-top: 120px;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 33px;
+  }
+}
+.contact_in {
+  max-width: 716px;
+  margin: 0 auto;
+}
+.contact_top {
+  gap: 36px;
+  margin-bottom: 52px;
+}
+@media (max-width: 768px) {
+  .contact_top {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 43px;
+  }
+}
+.contact_social {
+  gap: 68px;
+}
+@media (max-width: 768px) {
+  .contact_social {
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .contact_social a {
+    width: 34px;
+    height: 34px;
+  }
+}
+.contact h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: right;
+  color: #E8E8E8;
+}
+@media (max-width: 768px) {
+  .contact h5 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.contact h6 {
+  font-size: 28px;
+  font-weight: 450;
+  line-height: 35px;
+  color: #6F6F6F;
+  margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .contact h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.contact p {
+  max-width: 472px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #6F6F6F;
+}
+@media (max-width: 768px) {
+  .contact p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.footer {
+  margin-top: 86px;
+}
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 46px;
+  }
+}
 .footer_in {
   border-top: 0.5px solid #FFFFFF;
   padding: 68px 0 46px 0;
@@ -561,6 +658,10 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 450;
   line-height: 17.5px;
   color: #E8E8E8;
+  transition: 0.3s linear;
+}
+.footer_in ul a:hover {
+  color: #DFFA70;
 }
 @media (max-width: 768px) {
   .footer_in ul a {
