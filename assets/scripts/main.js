@@ -1,3 +1,13 @@
+// header_nav
+let header_nav = document.querySelector('.header_nav');
+let header_nav_btn = document.querySelector('.header_nav_btn');
+let body = document.querySelector('.hidden');
+
+header_nav_btn.addEventListener('click', () => {
+  header_nav.classList.toggle('active');
+  body.classList.toggle('active');
+})
+// header_nav
 
 let swiper = new Swiper(".treatmentsSwiper", {
   slidesPerView: 1.10,

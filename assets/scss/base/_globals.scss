@@ -28,6 +28,10 @@ body {
   font-style: normal;
   font-display: swap;
   background-color: $color-dark;
+
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 input, textarea {
