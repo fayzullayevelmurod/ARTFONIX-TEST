@@ -1,3 +1,102 @@
 .footer {
-  
+  &_in {
+    border-top: 0.5px solid $color-white;
+    padding: 68px 0 46px 0;
+    gap: 61px 0;
+
+    @include tablet-768 {
+      padding: 24px 0 19px 0;
+      gap: 15px 0;
+    }
+
+    h6 {
+      margin-bottom: 40px;
+      font-size: 24px;
+      font-weight: 450;
+      line-height: 30px;
+      color: $color-white-10;
+
+      @include tablet-768 {
+        margin-bottom: 10px;
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+
+    ul {
+      gap: 5px;
+
+      @include tablet-768 {
+        gap: 0;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        font-size: 14px;
+        font-weight: 450;
+        line-height: 17.5px;
+        color: $color-white-10;
+
+
+        @include tablet-768() {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17.5px;
+        text-transform: uppercase;
+        color: $color-grey;
+
+        @include tablet-768() {
+          font-size: 9px;
+          line-height: 11px;
+        }
+      }
+    }
+  }
+
+  &_number {
+    margin-left: auto;
+    width: max-content;
+
+    @include tablet-768() {
+      margin-left: 0;
+    }
+  }
+
+  &_logo {
+    display: none;
+
+    @include mobile-380() {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+  }
+
+  &_bottom_text {
+    font-size: 15px;
+    font-weight: 450;
+    line-height: 18.75px;
+    color: $color-grey;
+    margin-bottom: 10px;
+
+    @include tablet-768() {
+      font-size: 11px;
+      line-height: 13px;
+    }
+
+    @include mobile-380() {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }

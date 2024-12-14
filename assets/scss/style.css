@@ -358,6 +358,7 @@ body {
   font-family: "Futura PT", sans-serif;
   font-style: normal;
   font-display: swap;
+  background-color: #090909;
 }
 
 input, textarea {
@@ -377,13 +378,29 @@ address {
   font-style: normal;
 }
 
+ul, ol, dl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
 .wrapper {
   width: 100%;
   overflow: hidden;
 }
 
 .container {
-  max-width: 1337px;
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 926px;
   margin: 0 auto;
 }
 
@@ -393,5 +410,107 @@ address {
 @media (max-width: 1024px) {
   .section-top {
     margin-top: 80px;
+  }
+}
+
+.footer_in {
+  border-top: 0.5px solid #FFFFFF;
+  padding: 68px 0 46px 0;
+  gap: 61px 0;
+}
+@media (max-width: 768px) {
+  .footer_in {
+    padding: 24px 0 19px 0;
+    gap: 15px 0;
+  }
+}
+.footer_in h6 {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 450;
+  line-height: 30px;
+  color: #E8E8E8;
+}
+@media (max-width: 768px) {
+  .footer_in h6 {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+.footer_in ul {
+  gap: 5px;
+}
+@media (max-width: 768px) {
+  .footer_in ul {
+    gap: 0;
+  }
+}
+.footer_in ul li {
+  display: flex;
+  align-items: center;
+}
+.footer_in ul a {
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 17.5px;
+  color: #E8E8E8;
+}
+@media (max-width: 768px) {
+  .footer_in ul a {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+.footer_in ul span {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17.5px;
+  text-transform: uppercase;
+  color: #6F6F6F;
+}
+@media (max-width: 768px) {
+  .footer_in ul span {
+    font-size: 9px;
+    line-height: 11px;
+  }
+}
+.footer_number {
+  margin-left: auto;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 768px) {
+  .footer_number {
+    margin-left: 0;
+  }
+}
+.footer_logo {
+  display: none;
+}
+@media (max-width: 380px) {
+  .footer_logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+}
+.footer_bottom_text {
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 18.75px;
+  color: #6F6F6F;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .footer_bottom_text {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+@media (max-width: 380px) {
+  .footer_bottom_text {
+    display: flex;
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */

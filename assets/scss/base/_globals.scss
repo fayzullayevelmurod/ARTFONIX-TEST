@@ -27,6 +27,7 @@ body {
   font-family: $Futura-PT;
   font-style: normal;
   font-display: swap;
+  background-color: $color-dark;
 }
 
 input, textarea {
@@ -46,15 +47,30 @@ address {
   font-style: normal;
 }
 
+ul, ol, dl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
 .wrapper {
   width: 100%;
   overflow: hidden;
 }
 
 .container {
-  max-width: calc(1337px);
+  max-width: calc(1112px);
   margin: 0 auto;
+}
 
+.container-sm {
+  max-width: calc(926px);
+  margin: 0 auto;
 }
 
 .section-top {
