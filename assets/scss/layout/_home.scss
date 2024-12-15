@@ -3,9 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  margin-bottom: 93px;
 
   @include tablet-768 {
     background-position: 28%;
+    margin-bottom: 50px;
   }
 
   &_pattern {

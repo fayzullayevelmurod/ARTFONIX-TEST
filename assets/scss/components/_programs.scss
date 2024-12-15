@@ -32,6 +32,29 @@
       }
 
     }
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23.92px;
+      color: $color-white;
+      margin: 18px 0 6px 0;
+
+      @include tablet-768 {
+        display: none;
+      }
+    }
+
+    data {
+      font-size: 16px;
+      font-weight: 450;
+      line-height: 19.14px;
+      color: $color-white;
+
+      @include tablet-768 {
+        display: none;
+      }
+    }
   }
 
   &_card_bottom {
