@@ -34,25 +34,15 @@ let swiper1 = new Swiper(".programSwiper", {
 });
 // program_slider
 
-// let swiper = new Swiper(".treatmentsSwiper", {
-//   slidesPerView: 1.10,
-//   spaceBetween: 28,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   breakpoints: {
-//     640: {
-//       slidesPerView: 2.2,
-//       spaceBetween: 28,
-//     },
-//     993: {
-//       slidesPerView: 3.2,
-//       spaceBetween: 28,
-//     },
-//     1200: {
-//       slidesPerView: 3.6,
-//       spaceBetween: 40,
-//     },
-//   },
-// });
+// ourshowsSwiper
+let swiper2 = new Swiper(".ourshowsSwiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 10,
+  centeredSlides: true,
+  initialSlide: 1,
+  pagination: {
+    el: ".ourshows-pagination",
+    clickable: true,
+  },
+});
+// ourshowsSwiper

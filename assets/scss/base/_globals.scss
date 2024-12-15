@@ -144,6 +144,33 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 // main_text
 
+// main_btn
+.main_btn {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.95px;
+  text-align: center;
+  color: black;
+  padding: 3px;
+  border-radius: 3px;
+  width: 208px;
+  height: 29px;
+  background-color: $color-green-light;
+  @include transition();
+  border: 1px solid transparent;
+
+  @include tablet-768 {
+    width: 100%
+  }
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $color-green-light;
+    color: $color-green-light;
+  }
+}
+// main_btn
+
 // event_banner
 .event_banner {
   img {
