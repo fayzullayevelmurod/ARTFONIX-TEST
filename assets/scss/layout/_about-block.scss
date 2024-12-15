@@ -1,0 +1,20 @@
+.about_block {
+  padding: 92px 0 57px 0;
+
+  @include tablet-768 {
+    padding: 31px 0 25px 0;
+  }
+
+  &_in {
+    gap: 25px 0;
+    padding-top: 30px;
+  }
+
+  &_text_end {
+    padding-top: 58px;
+
+    @include tablet-768 {
+      padding-top: 0;
+    }
+  }
+}

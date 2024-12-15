@@ -1,0 +1,72 @@
+.choose {
+  padding: 76px 0 56px 0;
+
+  @include tablet-768 {
+    padding: 38px 0 79px 0;
+  }
+
+  &_title {
+    gap: 40px;
+
+    @include tablet-768 {
+      gap: 25px;
+    }
+  }
+
+  &_cards {
+    margin-top: 40px;
+    gap: 23px 0;
+
+    @include tablet-768 {
+      margin-top: 30px;
+      gap: 16px;
+    }
+  }
+
+  &_card {
+    position: relative;
+    height: 100%;
+
+    h6 {
+      font-size: 20px;
+      font-weight: 450;
+      line-height: 25px;
+      color: $color-white-10;
+      margin-bottom: 30px;
+
+      br {
+        @include tablet-768 {
+          display: none;
+        }
+      }
+
+      @include tablet-768 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .main_text {
+      @include tablet-768 {
+        color: $color-grey-10;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &_card_line {
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: .5px;
+      background-color: $color-white;
+      left: -20px;
+
+      @include tablet-768 {
+        display: none;
+      }
+    }
+  }
+}
