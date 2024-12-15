@@ -402,6 +402,11 @@ p, h1, h2, h3, h4, h5, h6 {
   max-width: 1112px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 .container-sm {
   max-width: 926px;
@@ -976,8 +981,10 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 46px;
   }
 }
-.footer_in {
+.footer_wrapper {
   border-top: 0.5px solid #FFFFFF;
+}
+.footer_in {
   padding: 68px 0 46px 0;
   gap: 61px 0;
 }

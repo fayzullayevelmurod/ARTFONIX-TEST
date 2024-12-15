@@ -5,8 +5,11 @@
     margin-top: 46px;
   }
 
-  &_in {
+  &_wrapper {
     border-top: 0.5px solid $color-white;
+  }
+
+  &_in {
     padding: 68px 0 46px 0;
     gap: 61px 0;
 
