@@ -1,0 +1,36 @@
+.event_home {
+  background-image: url('../images/event_img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include mobile-576{
+    background-image: url('../images/event_img_media.png');
+  }
+
+  &_bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.66);
+  }
+
+  .title-lg {
+    z-index: 3;
+    padding: 283px 0 20px 0;
+
+    @include mobile-576{
+      padding: 111px 0 63px 0;
+    }
+
+    br {
+      display: none;
+
+      @include tablet-768 {
+        display: block;
+      }
+    }
+  }
+}

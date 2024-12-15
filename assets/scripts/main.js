@@ -1,11 +1,11 @@
 // header_nav
 let header_nav = document.querySelector('.header_nav');
 let header_nav_btn = document.querySelector('.header_nav_btn');
-let body = document.querySelector('.hidden');
+let body_in = document.querySelector('.body_in');
 
 header_nav_btn.addEventListener('click', () => {
   header_nav.classList.toggle('active');
-  body.classList.toggle('active');
+  body_in.classList.toggle('hidden');
 })
 // header_nav
 

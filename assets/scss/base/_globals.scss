@@ -28,7 +28,9 @@ body {
   font-style: normal;
   font-display: swap;
   background-color: $color-dark;
+}
 
+.body_in {
   &.hidden {
     overflow: hidden;
   }
@@ -84,3 +86,38 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 80px;
   }
 }
+
+// main_title
+.title-lg {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 61.44px;
+  color: $color-white;
+  text-transform: uppercase;
+
+  span {
+    color: $color-green-light;
+  }
+
+  @include tablet-768 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 47.04px;
+  }
+}
+// main_title
+
+// section_title
+.section_title {
+  font-size: 64px;
+  font-weight: 450;
+  line-height: 61.44px;
+  color: $color-white;
+  text-transform: uppercase;
+
+  @include tablet-768 {
+    font-size: 40px;
+    line-height: 38px;
+  }
+}
+// section_title
