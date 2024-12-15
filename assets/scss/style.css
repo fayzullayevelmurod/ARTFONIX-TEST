@@ -812,6 +812,11 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 40px auto;
   }
 }
+@media (max-width: 380px) {
+  .musicians_cards {
+    padding: 0 20px;
+  }
+}
 .musicians_card {
   display: flex;
   align-items: center;
@@ -824,7 +829,7 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-shrink: 0;
   border-radius: 50%;
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .musicians_card img {
     max-width: 89px;
     height: 89px;

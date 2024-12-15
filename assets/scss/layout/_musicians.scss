@@ -9,6 +9,10 @@
       padding: 0 40px;
       margin: 40px auto;
     }
+
+    @include mobile-380 {
+      padding: 0 20px;
+    }
   }
 
   &_card {
@@ -23,7 +27,7 @@
       flex-shrink: 0;
       border-radius: 50%;
 
-      @include mobile-380 {
+      @include mobile-480 {
         max-width: 89px;
         height: 89px;
         flex-shrink: 0;
