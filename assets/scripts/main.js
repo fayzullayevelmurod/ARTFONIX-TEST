@@ -46,3 +46,28 @@ let swiper2 = new Swiper(".ourshowsSwiper", {
   },
 });
 // ourshowsSwiper
+
+// select
+document.addEventListener("DOMContentLoaded", () => {
+  const customSelect = document.querySelector(".custom-select");
+  const selected = document.querySelector(".select-selected");
+  const options = document.querySelectorAll(".select-items span");
+
+  selected.addEventListener("click", () => {
+    customSelect.classList.toggle("open");
+  });
+
+  options.forEach(option => {
+    option.addEventListener("click", (e) => {
+      selected.textContent = e.target.textContent;
+      customSelect.classList.remove("open");
+    });
+  });
+
+  window.addEventListener("click", (e) => {
+    if (!customSelect.contains(e.target)) {
+      customSelect.classList.remove("open");
+    }
+  });
+});
+// select

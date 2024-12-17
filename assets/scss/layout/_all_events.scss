@@ -1,0 +1,79 @@
+.all_events {
+  .title-lg {
+    padding: 82px 0 22px 0;
+
+    @include tablet-768 {
+      padding: 44px 0 34px 0;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &_select {
+    .custom-select-container {
+      position: relative;
+      width: 187px;
+
+      .custom-select {
+        position: relative;
+        cursor: pointer;
+
+        svg {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          right: 0;
+        }
+
+        .select-selected {
+          position: relative;
+          padding-bottom: 4px;
+          border-bottom: .5px solid $color-white;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 19.2px;
+          color: $color-white;
+          padding-right: 20px;
+        }
+
+        .select-items {
+          display: none;
+          flex-direction: column;
+          gap: 11px;
+          position: absolute;
+          right: 0;
+          background-color: #000;
+          width: 90%;
+          z-index: 10;
+          padding: 12px 20px;
+          text-align: right;
+
+          span {
+            display: block;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19.2px;
+            color: $color-white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            &:hover {
+              background-color: #333;
+            }
+          }
+        }
+
+        &.open .select-items {
+          display: flex;
+        }
+
+        &.open .select-selected svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
