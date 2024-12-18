@@ -1099,6 +1099,14 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.all_events {
+  margin-bottom: 111px;
+}
+@media (max-width: 768px) {
+  .all_events {
+    margin-bottom: 45px;
+  }
+}
 .all_events .title-lg {
   padding: 82px 0 22px 0;
 }
@@ -1164,6 +1172,120 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .all_events_select .custom-select-container .custom-select.open .select-selected svg {
   transform: rotate(180deg);
+}
+.all_events .progress_icon {
+  margin-top: 84px;
+}
+.all_events .progress_icon img {
+  width: 49px;
+  height: 49px;
+  display: inline-block;
+  animation: rotate 2s linear infinite;
+  transform-origin: center;
+  width: 49px;
+  height: 49px;
+}
+@media (max-width: 768px) {
+  .all_events .progress_icon img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .all_events .progress_icon {
+    margin-top: 23px;
+  }
+}
+.all_events_cards {
+  gap: 121px 0;
+  margin-top: 125px;
+}
+@media (max-width: 768px) {
+  .all_events_cards {
+    gap: 13px 0;
+    margin-top: 50px;
+  }
+}
+.all_events_card {
+  width: 100%;
+}
+.all_events_card img {
+  width: 100%;
+}
+.all_events_card h6 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 42.8px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .all_events_card h6 {
+    font-size: 36px;
+    line-height: 38px;
+  }
+}
+.all_events_card p {
+  margin: 12px 0 5px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.92px;
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .all_events_card p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+  }
+}
+.all_events_card span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.14px;
+  color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .all_events_card span {
+    font-size: 10px;
+    line-height: 11px;
+  }
+}
+.all_events_card_text {
+  bottom: -61px;
+  left: 80px;
+}
+@media (max-width: 768px) {
+  .all_events_card_text {
+    top: 7px;
+    left: 6px;
+    width: 100%;
+    bottom: 7px;
+    right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.all_events_card_bg {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 69px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+@media (max-width: 768px) {
+  .all_events_card_bg {
+    display: none;
+  }
 }
 
 .purchase {
