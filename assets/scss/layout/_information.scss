@@ -62,6 +62,10 @@
       gap: 20px;
     }
 
+    .main_text {
+      color: $color-white;
+      font-weight: 300;
+    }
 
     h6 {
       text-transform: uppercase;
@@ -88,7 +92,7 @@
       bottom: 0;
       margin: auto;
       right: -17px;
-      width: 1px;
+      width: .5px;
       height: 260px;
       background-color: $color-white;
     }

@@ -1051,6 +1051,10 @@ p, h1, h2, h3, h4, h5, h6 {
     gap: 20px;
   }
 }
+.information_card_right .main_text {
+  color: #FFFFFF;
+  font-weight: 300;
+}
 .information_card_right h6 {
   text-transform: uppercase;
   font-size: 24px;
@@ -1075,7 +1079,7 @@ p, h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   margin: auto;
   right: -17px;
-  width: 1px;
+  width: 0.5px;
   height: 260px;
   background-color: #FFFFFF;
 }
@@ -1402,6 +1406,88 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 29px;
     margin-top: 17px;
     width: 100%;
+  }
+}
+
+.blog_information {
+  padding: 110px 0;
+}
+@media (max-width: 768px) {
+  .blog_information .information_block {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 768px) {
+  .blog_information .information_card_right {
+    gap: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .blog_programslider .section_title br {
+    display: none;
+  }
+}
+.blog_programslider .programslider_card_text {
+  display: flex;
+  flex-direction: column;
+  bottom: -70px;
+  background: transparent;
+  padding: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 768px) {
+  .blog_programslider .programslider_card_text {
+    bottom: -35px;
+  }
+}
+@media (max-width: 768px) {
+  .blog_programslider .programslider_card_text h6 {
+    margin: 0;
+  }
+}
+.blog_programslider .programslider_card_text span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.92px;
+  color: #DFFA70;
+}
+@media (max-width: 768px) {
+  .blog_programslider .programslider_card_text span {
+    display: none;
+  }
+}
+.blog_programslider .programslider_card_text p, .blog_programslider .programslider_card_text data {
+  margin: 4px 0 0 0;
+  display: block;
+}
+@media (max-width: 768px) {
+  .blog_programslider .programslider_card_text p, .blog_programslider .programslider_card_text data {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.blog_programslider .programslider_card_bg {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+@media (max-width: 768px) {
+  .blog_programslider .programslider_card_bg {
+    height: 37px;
+  }
+}
+.blog_programslider .programslider_btns {
+  margin-top: 134px;
+}
+@media (max-width: 768px) {
+  .blog_programslider .programslider_btns {
+    margin-top: 74px;
   }
 }
 

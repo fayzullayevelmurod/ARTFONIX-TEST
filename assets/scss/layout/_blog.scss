@@ -1,0 +1,92 @@
+.blog{
+  &_information {
+    padding: 110px 0;
+
+    .information_block {
+      @include tablet-768 {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .information_card_right {
+      @include tablet-768 {
+        gap: 36px;
+      }
+    }
+  }
+
+  &_programslider {
+    .section_title {
+      br {
+        @include tablet-768 {
+          display: none;
+        }
+      }
+    }
+
+    .programslider_card_text {
+      display: flex;
+      flex-direction: column;
+      bottom: -70px;
+      background: transparent;
+      padding: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: max-content;
+
+      @include tablet-768 {
+        bottom: -35px;
+      }
+
+      h6 {
+        @include tablet-768 {
+          margin: 0;
+        }
+      }
+
+      span {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 23.92px;
+        color: $color-green-light;
+
+        @include tablet-768 {
+          display: none;
+        }
+      }
+
+      p, data {
+        margin: 4px 0 0 0;
+        display: block;
+
+        @include tablet-768 {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+
+    .programslider_card_bg {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+      @include tablet-768 {
+        height: 37px;
+      }
+    }
+
+    .programslider_btns {
+      margin-top: 134px;
+
+      @include tablet-768 {
+        margin-top: 74px;
+      }
+    }
+  }
+}
+
+
