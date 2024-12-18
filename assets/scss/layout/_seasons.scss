@@ -1,0 +1,56 @@
+.seasons_choose {
+
+  .title-lg {
+    font-weight: 400;
+  }
+
+  .choose_cards {
+    gap: 35px 0;
+
+    @include tablet-768 {
+      gap: 30px;
+    }
+  }
+
+  .choose_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h6 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      color: $color-white;
+      margin: 36px 0;
+
+      @include tablet-768 {
+        margin: 12px 0;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .main_text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18.4px;
+      color: #6F6F6F;
+      max-width: 265px;
+
+      @include tablet-768 {
+        font-size: 14px;
+        line-height: 16px;
+        max-width: 312px;
+      }
+    }
+
+    span {
+      font-family: $NunitoSans;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 21.4px;
+      color: $color-green-light;
+    }
+  }
+}

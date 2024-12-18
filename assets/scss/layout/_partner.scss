@@ -1,0 +1,38 @@
+.partners {
+  margin: 93px 0 163px 0;
+
+  @include tablet-768 {
+    margin: 53px 0 78px 0;
+  }
+
+  &_blocks {
+    margin-top: 50px;
+
+    @include tablet-768 {
+      margin-top: 40px;
+      gap: 30px 0;
+    }
+  }
+
+  &_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include tablet-768 {
+      gap: 11px;
+    }
+  }
+
+  &_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+    @include tablet-768 {
+      height: 42px;
+    }
+  }
+}

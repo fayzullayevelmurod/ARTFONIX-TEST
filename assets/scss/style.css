@@ -1491,6 +1491,98 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.seasons_choose .title-lg {
+  font-weight: 400;
+}
+.seasons_choose .choose_cards {
+  gap: 35px 0;
+}
+@media (max-width: 768px) {
+  .seasons_choose .choose_cards {
+    gap: 30px;
+  }
+}
+.seasons_choose .choose_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.seasons_choose .choose_card h6 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 36px 0;
+}
+@media (max-width: 768px) {
+  .seasons_choose .choose_card h6 {
+    margin: 12px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.seasons_choose .choose_card .main_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.4px;
+  color: #6F6F6F;
+  max-width: 265px;
+}
+@media (max-width: 768px) {
+  .seasons_choose .choose_card .main_text {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 312px;
+  }
+}
+.seasons_choose .choose_card span {
+  font-family: "NunitoSans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 21.4px;
+  color: #DFFA70;
+}
+
+.partners {
+  margin: 93px 0 163px 0;
+}
+@media (max-width: 768px) {
+  .partners {
+    margin: 53px 0 78px 0;
+  }
+}
+.partners_blocks {
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .partners_blocks {
+    margin-top: 40px;
+    gap: 30px 0;
+  }
+}
+.partners_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .partners_block {
+    gap: 11px;
+  }
+}
+.partners_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+@media (max-width: 768px) {
+  .partners_img {
+    height: 42px;
+  }
+}
+
 .programslider .section_title {
   margin-bottom: 76px;
 }
