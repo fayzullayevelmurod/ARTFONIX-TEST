@@ -1542,6 +1542,87 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 21.4px;
   color: #DFFA70;
 }
+.seasons_choose .choose_bottom {
+  margin-top: 54px;
+}
+@media (max-width: 768px) {
+  .seasons_choose .choose_bottom {
+    margin-top: 28px;
+  }
+}
+.seasons_choose .choose_bottom_in {
+  max-width: 526px;
+}
+.seasons_choose .choose_bottom h6 {
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 25px;
+  color: #DFFA70;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+@media (max-width: 768px) {
+  .seasons_choose .choose_bottom h6 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 14px;
+  }
+}
+
+.seasons_maps {
+  margin-bottom: 160px;
+}
+@media (max-width: 768px) {
+  .seasons_maps {
+    margin-bottom: 50px;
+  }
+}
+.seasons_maps .section_title {
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .seasons_maps .section_title {
+    margin-bottom: 20px;
+  }
+}
+.seasons_maps iframe {
+  filter: grayscale(100%);
+  height: 444px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .seasons_maps iframe {
+    height: 160px;
+  }
+}
+.seasons_maps .location-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 27px;
+  height: 35px;
+  z-index: 1000;
+}
+@media (max-width: 768px) {
+  .seasons_maps .location-marker svg {
+    width: 9px;
+    height: 11px;
+  }
+}
+.seasons_maps .main_btn {
+  margin-top: 47px;
+  width: 131px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #DFFA70;
+}
+@media (max-width: 768px) {
+  .seasons_maps .main_btn {
+    margin-top: 16px;
+    width: 100%;
+  }
+}
 
 .partners {
   margin: 93px 0 163px 0;
