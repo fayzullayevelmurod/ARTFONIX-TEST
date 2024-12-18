@@ -1,3 +1,4 @@
+// seasons_choose
 .seasons_choose {
 
   .title-lg {
@@ -81,6 +82,129 @@
     }
   }
 }
+// seasons_choose
+
+// seasons_home
+.seasons_home {
+  background-image: url('../images/home_img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 93px;
+
+  @include tablet-768 {
+    background-position: 28%;
+    margin-bottom: 50px;
+  }
+
+  &_text {
+    padding: 211px 0 157px 0;
+
+    @include tablet-768 {
+      padding: 101px 0 170px 0;
+    }
+
+    ul {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      @include tablet-768 {
+        order: 2;
+      }
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      font-size: 20px;
+      font-weight: 450;
+      line-height: 23.92px;
+      color: $color-white-10;
+
+      img {
+        @include tablet-768 {
+          width: 14px;
+        }
+      }
+
+      @include tablet-768 {
+        font-size: 15px;
+        line-height: 17px;
+        gap: 7px;
+      }
+    }
+
+    span {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      color: $color-green-light;
+
+      @include tablet-768 {
+        order: 3;
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      color: $color-white;
+      max-width: 450px;
+      margin: 40px 0 17px 0;
+
+      @include tablet-768 {
+        font-size: 20px;
+        line-height: 19px;
+        max-width: 279px;
+        order: 1;
+        margin: 24px 0 32px 0;
+      }
+    }
+  }
+
+  &_bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .title-lg {
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 92.16px;
+    text-align: center;
+
+    @include tablet-768 {
+      font-size: 46px;
+      line-height: 44px;
+    }
+  }
+
+  .main_btn {
+    height: 43px;
+    width: 249px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 23px;
+
+    @include tablet-768 {
+      order: 4;
+      margin-top: 80px;
+      width: 100%;
+    }
+  }
+}
+// seasons_home
 
 // seasons_maps
 .seasons_maps {
@@ -199,5 +323,80 @@
   &_img {
     width: 100%;
   }
+
+  &_slider {
+    margin-top: 95px;
+
+    @include tablet-768 {
+      margin-top: 32px;
+    }
+
+    .swiper-notification {
+      display: none;
+    }
+  }
+
+  &_block {
+    button {
+      width: 30px;
+      height: 30px;
+
+      @include tablet-768 {
+        width: 13px;
+        height: 13px;
+      }
+    }
+
+    &_img {
+      width: 100%;
+    }
+  }
 }
 // concert
+
+// hear_slider
+.hear_slider {
+  margin: 142px 0 95px 0;
+
+  @include tablet-768 {
+    margin: 70px 0;
+  }
+
+  .section_title {
+    margin-bottom: 94px;
+
+    @include tablet-768 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .hear_block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    @include tablet-768 {
+      gap: 12px;
+    }
+
+    &:last-child {
+      img {
+        border-radius: 8px;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+    }
+
+    span {
+      font-family: $NunitoSans;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 14px;
+      color: #FFFFFFBF;
+      text-align: center;
+    }
+  }
+}
+// hear_slider

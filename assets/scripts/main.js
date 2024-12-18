@@ -47,6 +47,40 @@ let swiper2 = new Swiper(".ourshowsSwiper", {
 });
 // ourshowsSwiper
 
+// concertSwiper
+let swiper3 = new Swiper(".concertSwiper", {
+  slidesPerView: 2.2,
+  spaceBetween: 5,
+  breakpoints: {
+    640: {
+      slidesPerView: 2.5,
+      spaceBetween: 19,
+    },
+    1200: {
+      slidesPerView: 2.7,
+      spaceBetween: 19,
+    },
+  },
+});
+// concertSwiper
+
+// hearSwiper
+let swiper4 = new Swiper(".hearSwiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 23,
+  breakpoints: {
+    640: {
+      slidesPerView: 3.5,
+      spaceBetween: 19,
+    },
+    1200: {
+      slidesPerView: 4.4,
+      spaceBetween: 37,
+    },
+  },
+});
+// hearSwiper
+
 // select
 document.addEventListener("DOMContentLoaded", () => {
   const customSelect = document.querySelector(".custom-select");
