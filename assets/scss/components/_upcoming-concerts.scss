@@ -1,0 +1,290 @@
+.upcoming_concerts {
+  margin-bottom: 80px;
+
+  &_main {
+    margin-top: 80px;
+  }
+
+  @include tablet-768 {
+    margin-bottom: 50px;
+  }
+
+  &_in {
+    margin: 30px 0 77px 0;
+
+    @include tablet-768 {
+      background-image: url('../images/upcoming_concerts_bg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .more_btn {
+    margin: 77px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-green-light;
+    border-radius: 50%;
+    width: 117px;
+    height: 117px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18.19px;
+    text-align: center;
+    color: $color-green-light;
+
+    @include tablet-768 {
+      font-weight: 600;
+      width: 115px;
+      height: 115px;
+    }
+  }
+
+  li {
+    padding: 15px 0;
+    border-top: .5px solid $color-white;
+
+    &:last-child {
+      border-bottom: .5px solid $color-white;
+    }
+  }
+
+  &_block {
+    transition: .3s linear;
+    height: 110px;
+
+    &.active {
+      height: 214px;
+
+      .upcoming_concerts_block_img {
+        display: flex;
+      }
+
+      @include tablet-768 {
+        height: 192px;
+        background-position: center;
+
+        .upcoming_concerts_block_in {
+          display: none;
+        }
+
+        .upcoming_concerts_block_media {
+          position: relative;
+          z-index: 2;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .upcoming_concerts_block_bg {
+        display: block;
+        z-index: 2;
+      }
+
+      a {
+        img {
+          display: none;
+        }
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    &_img {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include tablet-768 {
+        transform: scaleX(1.1);
+      }
+    }
+
+    &_bg {
+      display: none;
+      height: 120px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #090909 100%);
+      transition: .3s linear;
+    }
+
+    &_media {
+      display: none;
+      span {
+        display: block;
+        font-size: 12px;
+        font-weight: 450;
+        line-height: 12.84px;
+        color: $color-white;
+      }
+
+      h6 {
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 20.33px;
+        text-align: center;
+        color: $color-white;
+      }
+
+      p {
+        font-size: 7px;
+        font-weight: 450;
+        line-height: 8.37px;
+        text-align: right;
+        color: $color-white;
+      }
+    }
+
+    &_in {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h6 {
+        font-size: 29px;
+        font-weight: 400;
+        line-height: 31.03px;
+        color: $color-white;
+      }
+
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12.84px;
+        color: $color-white;
+      }
+
+      p {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $color-white;
+      }
+
+      h5 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 34.24px;
+        color: $color-white;
+        text-transform: uppercase;
+
+        @include tablet-768 {
+          position: absolute;
+          top: 13px;
+          right: 0;
+          font-size: 19px;
+          line-height: 20px;
+          width: 197px;
+          text-align: center;
+        }
+      }
+
+      a {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        color: $color-white;
+        text-transform: uppercase;
+
+        @include tablet-768 {
+          font-size: 12px;
+          line-height: 14px;
+          width: 181px;
+          text-align: center;
+          margin-right: 8px;
+        }
+
+        img {
+          margin-left: auto;
+          display: block;
+          margin-top: 9px;
+
+          @include tablet-768 {
+            text-align: center;
+            margin-left: 0;
+            margin: 9px auto 0 auto;
+          }
+        }
+
+        span {
+          text-align: right;
+          margin-left: auto;
+          display: none;
+          margin-top: 9px;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 12.84px;
+          color: $color-white;
+        }
+      }
+    }
+
+    &_left {
+      @include tablet-768 {
+        text-align: center;
+      }
+    }
+
+    &_left,
+    &_center,
+    &_right {
+      position: relative;
+      z-index: 2;
+      transition: .3s linear;
+
+      @include tablet-768 {
+        position: static;
+      }
+    }
+
+    &:hover {
+      height: 214px;
+
+      .upcoming_concerts_block_img {
+        display: flex;
+      }
+
+      @include tablet-768 {
+        height: 192px;
+        background-position: center;
+
+        .upcoming_concerts_block_in {
+          display: none;
+        }
+
+        .upcoming_concerts_block_media {
+          position: relative;
+          z-index: 2;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .upcoming_concerts_block_bg {
+        z-index: 2;
+        display: block;
+      }
+
+      a {
+        img {
+          display: none;
+        }
+
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
