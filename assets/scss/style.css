@@ -1902,6 +1902,121 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.video_reviews {
+  margin-bottom: 104px;
+}
+@media (max-width: 768px) {
+  .video_reviews {
+    margin-bottom: 50px;
+  }
+}
+.video_reviews .section_title {
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .video_reviews .section_title {
+    margin-bottom: 30px;
+  }
+}
+.video_reviews .swiper-notification {
+  display: none;
+}
+.video_reviews .video_reviews_btns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .video_reviews .video_reviews_btns {
+    display: flex;
+  }
+}
+.video_reviews .video_reviews_btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video_reviews .video_reviews_btn svg {
+  width: 7px;
+  height: 15px;
+}
+.video_reviews .swiper-button-disabled {
+  border: 1px solid #ABABAB;
+}
+.video_reviews .swiper-button-disabled svg path {
+  stroke: #ABABAB;
+}
+.video_reviews_card_video button {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+}
+@media (max-width: 768px) {
+  .video_reviews_card_video button {
+    width: 20px;
+    height: 20px;
+  }
+}
+.video_reviews_card_video button img {
+  width: 100%;
+}
+.video_reviews_card_text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: left;
+  gap: 4px;
+}
+@media (max-width: 768px) {
+  .video_reviews_card_text {
+    margin-top: 10px;
+    align-items: start;
+  }
+}
+.video_reviews_card_text h6 {
+  width: 150px;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  color: #FFFFFF;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .video_reviews_card_text h6 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+.video_reviews_card_text span {
+  width: 150px;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  color: #DFFA70;
+}
+@media (max-width: 768px) {
+  .video_reviews_card_text span {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+.video_reviews_card_img {
+  width: 100%;
+}
+
 .programslider .section_title {
   margin-bottom: 76px;
 }

@@ -1,0 +1,126 @@
+.video_reviews {
+  margin-bottom: 104px;
+
+  @include tablet-768 {
+    margin-bottom: 50px;
+  }
+
+  .section_title {
+    margin-bottom: 80px;
+
+    @include tablet-768 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .swiper-notification {
+    display: none;
+  }
+
+  .video_reviews_btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+
+    @include tablet-768 {
+      display: flex;
+    }
+  }
+
+  .video_reviews_btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 7px;
+      height: 15px;
+    }
+  }
+
+  .swiper-button-disabled {
+    border: 1px solid #ABABAB;
+
+    svg {
+      path {
+        stroke: #ABABAB;
+      }
+    }
+  }
+
+  &_card {
+    &_video {
+      button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 45px;
+        height: 45px;
+
+        @include tablet-768 {
+          width: 20px;
+          height: 20px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &_text {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      text-align: left;
+      gap: 4px;
+
+      @include tablet-768 {
+        margin-top: 10px;
+        align-items: start;
+      }
+
+      h6 {
+        width: 150px;
+        font-family: $NunitoSans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.82px;
+        color: $color-white;
+        text-align: left;
+
+        @include tablet-768 {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+
+      span {
+        width: 150px;
+        font-family: $NunitoSans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.82px;
+        color: $color-green-light;
+
+        @include tablet-768 {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+    }
+
+    &_img {
+      width: 100%;
+    }
+  }
+}

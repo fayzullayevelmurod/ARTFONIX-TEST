@@ -81,6 +81,27 @@ let swiper4 = new Swiper(".hearSwiper", {
 });
 // hearSwiper
 
+// video_reviewsSwiper
+let swiper5 = new Swiper(".video_reviewsSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".video_reviews-button-next",
+    prevEl: ".video_reviews-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 1.6,
+      spaceBetween: 48,
+    },
+  },
+});
+// video_reviewsSwiper
+
 // select
 document.addEventListener("DOMContentLoaded", () => {
   const customSelect = document.querySelector(".custom-select");
