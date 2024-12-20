@@ -102,6 +102,17 @@ let swiper5 = new Swiper(".video_reviewsSwiper", {
 });
 // video_reviewsSwiper
 
+// articleSwiper
+let swiper6 = new Swiper(".articleSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: ".article-pagination",
+    clickable: true,
+  },
+});
+// articleSwiper
+
 // accardion_seasons
 function setupAccordion(selector, activeClass) {
   const buttons = document.querySelectorAll(selector);

@@ -1,3 +1,4 @@
+// accardion_seasons
 .accardion_seasons {
   &_block {
     border-top: .5px solid $color-white;
@@ -184,3 +185,186 @@
     }
   }
 }
+// accardion_seasons
+
+// article_search
+.article_search {
+  margin-bottom: 80px;
+
+  @include tablet-768 {
+    margin-bottom: 40px;
+  }
+
+  &_wrapper {
+    @include tablet-768 {
+      gap: 35px;
+    }
+  }
+
+  h6 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: $color-white;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+
+    @include tablet-768 {
+      margin-bottom: 30px;
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @include tablet-768 {
+      flex-direction: column;
+      gap: 17px;
+    }
+
+    input {
+      flex: 1;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 17.95px;
+      color: $color-white;
+      padding: 5px 15px;
+      border-radius: 3px;
+      border: .5px solid $color-white;
+
+      @include tablet-768 {
+        width: 100%;
+      }
+
+      &::placeholder {
+        color: $color-white;
+      }
+    }
+
+    button {
+      flex: 1;
+    }
+  }
+
+  .article_search_block {
+    &_in {
+      margin-top: 25px;
+      display: grid;
+      gap: 8px 11px;
+      grid-template-columns: repeat(4, 1fr);
+
+      @include tablet-768 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      button {
+        position: relative;
+        height: 29px;
+        border: .5px solid #8A8A8B;
+        border-radius: 3px;
+
+        span {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 17.95px;
+          text-align: center;
+          color: #8A8A8B;
+        }
+
+        svg {
+          position: absolute;
+          right: 5px;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+        }
+      }
+    }
+  }
+
+}
+// article_search
+
+// article_slider
+.article_slider {
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: $color-white;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+
+    @include tablet-768 {
+      margin-bottom: 30px;
+    }
+  }
+
+  h6 {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $color-white;
+    margin: 12px 0 0 0;
+  }
+
+  span {
+    font-family: $NunitoSans;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 10px;
+    color: #949494;
+  }
+
+  .article_cards {
+    display: grid;
+    gap: 36px 25px;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include tablet-768 {
+      gap: 20px 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .articleSwiper {
+    overflow: hidden;
+  }
+
+  .article-pagination {
+    margin-top: 46px;
+    gap: 20px;
+
+    @include tablet-768 {
+      gap: 7px;
+      margin-top: 25px;
+    }
+
+    .swiper-pagination-bullet {
+      margin: 0;
+      background: transparent;
+      width: 16px;
+      height: 16px;
+      border: 3px solid $color-green-light;
+      opacity: 1;
+
+      @include tablet-768 {
+        width: 9px;
+        height: 9px;
+        background: $color-green-light;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $color-green-light;
+      box-shadow: 0px 0px 6px 2px #C9FA4980;
+    }
+  }
+}
+// article_slider
