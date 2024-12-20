@@ -1,0 +1,186 @@
+.accardion_seasons {
+  &_block {
+    border-top: .5px solid $color-white;
+    padding: 30px 23px;
+
+    &:last-child {
+      border-bottom: .5px solid $color-white;
+    }
+
+    &_in {
+      height: 0;
+      display: flex;
+      gap: 28px;
+      overflow: hidden;
+      transition: .3s linear;
+
+      @include tablet-993 {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      h5 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 34.24px;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+
+        @include tablet-993 {
+          font-size: 19px;
+          line-height: 20px;
+          margin-bottom: 17px;
+          text-align: center;
+        }
+      }
+
+      p {
+        margin-left: 40px;
+        font-size: 12px;
+        font-weight: 450;
+        line-height: 14.35px;
+        color: $color-white;
+        text-transform: uppercase;
+
+        @include tablet-993 {
+          text-align: center;
+          margin-left: 0;
+        }
+      }
+
+      .video_btn {
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,
+        -50%);
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .accardion_seasons_block_in_left {
+      max-width: 230px;
+
+      @include tablet-993 {
+        max-width: 100%;
+      }
+    }
+
+    .accardion_seasons_block_in_center {
+      max-width: 418px;
+
+      @include tablet-993 {
+        max-width: 100%;
+      }
+    }
+
+    .accardion_seasons_block_in_right {
+      max-width: 196px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      gap: 20px;
+      padding-bottom: 26px;
+
+      @include tablet-993 {
+        max-width: 100%;
+        gap: 10px;
+        padding-bottom: 0;
+      }
+
+      a {
+        font-size: 12px;
+        font-weight: 450;
+        line-height: 14.35px;
+        color: $color-white;
+        text-transform: uppercase;
+        transition: .3s linear;
+
+        @include tablet-993 {
+          text-align: center;
+        }
+
+        &:hover {
+          color: $color-green-light;
+        }
+      }
+    }
+
+    h6 {
+      transition: .3s linear;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 34.24px;
+      color: $color-white;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include tablet-993 {
+        font-size: 19px;
+        line-height: 20px;
+        text-align: left;
+      }
+
+      br {
+        display: none;
+      }
+    }
+
+    svg {
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      right: 48px;
+
+      @include tablet-993 {
+        right: 56px;
+      }
+
+      path {
+        transition: .3s linear;
+      }
+    }
+
+    &:hover {
+      h6 {
+        color: $color-green-light;
+      }
+
+      svg {
+        path {
+          stroke: $color-green-light;
+        }
+      }
+    }
+
+    &.active {
+      padding: 0;
+
+      .accardion_seasons_block_in {
+        overflow: hidden;
+        height: 355px;
+        padding: 71px 0;
+
+        @include tablet-993 {
+          height: 430px;
+          padding: 22px 0;
+        }
+      }
+
+      h6 {
+        display: none;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+  }
+}

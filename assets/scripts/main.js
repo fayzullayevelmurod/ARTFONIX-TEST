@@ -102,6 +102,22 @@ let swiper5 = new Swiper(".video_reviewsSwiper", {
 });
 // video_reviewsSwiper
 
+// accardion_seasons
+function setupAccordion(selector, activeClass) {
+  const buttons = document.querySelectorAll(selector);
+
+  buttons.forEach(button => {
+      button.addEventListener('click', () => {
+          buttons.forEach(btn => btn.classList.remove(activeClass));
+          button.classList.add(activeClass);
+      });
+  });
+}
+
+setupAccordion('.accardion_seasons_block', 'active');
+setupAccordion('.another_block', 'highlight');
+// accardion_seasons
+
 // select
 document.addEventListener("DOMContentLoaded", () => {
   const customSelect = document.querySelector(".custom-select");

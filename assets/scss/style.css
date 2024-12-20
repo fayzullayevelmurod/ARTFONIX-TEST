@@ -1902,6 +1902,175 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.accardion_seasons_block {
+  border-top: 0.5px solid #FFFFFF;
+  padding: 30px 23px;
+}
+.accardion_seasons_block:last-child {
+  border-bottom: 0.5px solid #FFFFFF;
+}
+.accardion_seasons_block_in {
+  height: 0;
+  display: flex;
+  gap: 28px;
+  overflow: hidden;
+  transition: 0.3s linear;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block_in {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.accardion_seasons_block_in h5 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 34.24px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block_in h5 {
+    font-size: 19px;
+    line-height: 20px;
+    margin-bottom: 17px;
+    text-align: center;
+  }
+}
+.accardion_seasons_block_in p {
+  margin-left: 40px;
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 14.35px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block_in p {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+.accardion_seasons_block_in .video_btn {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.accardion_seasons_block_in .video_btn img {
+  width: 100%;
+}
+.accardion_seasons_block .accardion_seasons_block_in_left {
+  max-width: 230px;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block .accardion_seasons_block_in_left {
+    max-width: 100%;
+  }
+}
+.accardion_seasons_block .accardion_seasons_block_in_center {
+  max-width: 418px;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block .accardion_seasons_block_in_center {
+    max-width: 100%;
+  }
+}
+.accardion_seasons_block .accardion_seasons_block_in_right {
+  max-width: 196px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  padding-bottom: 26px;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block .accardion_seasons_block_in_right {
+    max-width: 100%;
+    gap: 10px;
+    padding-bottom: 0;
+  }
+}
+.accardion_seasons_block .accardion_seasons_block_in_right a {
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 14.35px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block .accardion_seasons_block_in_right a {
+    text-align: center;
+  }
+}
+.accardion_seasons_block .accardion_seasons_block_in_right a:hover {
+  color: #DFFA70;
+}
+.accardion_seasons_block h6 {
+  transition: 0.3s linear;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 34.24px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block h6 {
+    font-size: 19px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+.accardion_seasons_block h6 br {
+  display: none;
+}
+.accardion_seasons_block svg {
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 48px;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block svg {
+    right: 56px;
+  }
+}
+.accardion_seasons_block svg path {
+  transition: 0.3s linear;
+}
+.accardion_seasons_block:hover h6 {
+  color: #DFFA70;
+}
+.accardion_seasons_block:hover svg path {
+  stroke: #DFFA70;
+}
+.accardion_seasons_block.active {
+  padding: 0;
+}
+.accardion_seasons_block.active .accardion_seasons_block_in {
+  overflow: hidden;
+  height: 355px;
+  padding: 71px 0;
+}
+@media (max-width: 993px) {
+  .accardion_seasons_block.active .accardion_seasons_block_in {
+    height: 430px;
+    padding: 22px 0;
+  }
+}
+.accardion_seasons_block.active h6 {
+  display: none;
+}
+.accardion_seasons_block.active svg {
+  display: none;
+}
+
 .video_reviews {
   margin-bottom: 104px;
 }
