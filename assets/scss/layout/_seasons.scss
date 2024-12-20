@@ -210,6 +210,32 @@
     right: 55px;
     z-index: 3;
 
+    &_text {
+      display: none;
+      border-radius: 4px;
+      background-color: #090909;
+      padding: 16px 18px;
+      width: 284px;
+      position: absolute;
+      bottom: calc(100% + 10px);
+      right: 0;
+
+      &.active {
+        display: block;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 450;
+        line-height: 16.1px;
+        text-align: center;
+        color: $color-white;
+
+        span {
+          color: $color-green-light;
+        }
+      }
+    }
 
     @include tablet-768 {
       right: 19px;
@@ -240,6 +266,7 @@
     }
 
     .icon {
+      cursor: pointer;
       margin-left: 34px;
       width: 24px;
       height: 24px;

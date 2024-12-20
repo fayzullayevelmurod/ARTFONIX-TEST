@@ -170,6 +170,15 @@ let swiper8 = new Swiper(".seeSwiper", {
 });
 // comment
 
+// seasons_timer
+let seasons_timer = document.querySelector('.seasons_timer .icon');
+let seasons_timer_text = document.querySelector('.seasons_timer_text');
+
+seasons_timer.addEventListener('click', () => {
+  seasons_timer_text.classList.toggle('active')
+})
+// seasons_timer
+
 // accardion_seasons
 function setupAccordion(selector, activeClass) {
   const buttons = document.querySelectorAll(selector);
