@@ -179,8 +179,6 @@ document.addEventListener("DOMContentLoaded", () => {
     seasons_timer.addEventListener('click', () => {
       seasons_timer_text.classList.toggle('active');
     });
-  } else {
-    console.error("Error: '.seasons_timer .icon' or '.seasons_timer_text' elements not found.");
   }
 });
 // seasons_timer
@@ -355,6 +353,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const customSelect = document.querySelector(".custom-select");
   const selected = document.querySelector(".select-selected");
   const options = document.querySelectorAll(".select-items span");
+
+  if (!customSelect || !selected || options.length === 0) {
+    console.error("Required elements are missing in the DOM.");
+    return;
+  }
 
   selected.addEventListener("click", () => {
     customSelect.classList.toggle("open");

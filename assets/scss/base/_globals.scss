@@ -191,6 +191,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
   @include tablet-768 {
     bottom: -40px;
+    left: 0;
     position: absolute;
     z-index: 5;
   }
@@ -226,7 +227,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
   .city-dropdown {
     z-index: 6;
-    position: absolute;
+    position: fixed;
     top: 75px;
     left: 0;
     right: 0;

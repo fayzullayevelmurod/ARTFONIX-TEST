@@ -515,6 +515,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .city-selector {
     bottom: -40px;
+    left: 0;
     position: absolute;
     z-index: 5;
   }
@@ -546,7 +547,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .city-selector .city-dropdown {
   z-index: 6;
-  position: absolute;
+  position: fixed;
   top: 75px;
   left: 0;
   right: 0;
@@ -635,6 +636,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header_nav.hidden {
   display: none;
+}
+@media (max-width: 768px) {
+  .header_nav.hidden {
+    display: block;
+  }
 }
 .header_nav.active {
   left: 0;
