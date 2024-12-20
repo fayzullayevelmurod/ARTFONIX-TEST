@@ -1873,6 +1873,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   .seasons_home .seasons_timer .icon {
+    font-size: 11px;
     width: 16px;
     height: 16px;
     margin-left: 11px;
