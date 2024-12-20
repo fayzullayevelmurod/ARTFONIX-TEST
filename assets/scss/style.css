@@ -2455,15 +2455,50 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
 }
+.sessions_block .media_title {
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 20.77px;
+  color: #FFFFFF;
+  margin-right: 40px;
+  margin-bottom: 7px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .sessions_block .media_title {
+    display: flex;
+  }
+}
+.sessions_block .media_title span {
+  color: #DFFA70;
+}
 .sessions_block_in {
   padding: 25px 0;
   border-top: 0.5px solid #DFFA70;
   border-bottom: 0.5px solid #DFFA70;
 }
+.sessions_block_in .media_btn {
+  display: none;
+  width: 100%;
+  height: 32px;
+  margin-top: 12px;
+}
+@media (max-width: 768px) {
+  .sessions_block_in .media_btn {
+    display: block;
+  }
+}
 .sessions_block .list_block {
   display: flex;
   align-items: stretch;
   gap: 50px;
+}
+@media (max-width: 768px) {
+  .sessions_block .list_block {
+    gap: 16px;
+  }
 }
 .sessions_block .list_block_img {
   width: 420px;
@@ -2471,12 +2506,48 @@ p, h1, h2, h3, h4, h5, h6 {
 .sessions_block .list_block_img img {
   width: 100%;
 }
+@media (max-width: 768px) {
+  .sessions_block .list_block_img {
+    width: 242px;
+  }
+}
+.sessions_block .list_block_media_text {
+  width: 71px;
+  display: none;
+}
+@media (max-width: 768px) {
+  .sessions_block .list_block_media_text {
+    display: block;
+  }
+}
+.sessions_block .list_block_media_text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sessions_block .list_block_media_text ul p {
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 14px;
+  color: #8A8A8B;
+}
+.sessions_block .list_block_media_text ul span {
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 16px;
+  color: #FFFFFF;
+}
 .sessions_block .list_block_text {
   position: relative;
   width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .sessions_block .list_block_text {
+    display: none;
+  }
 }
 .sessions_block .list_block_text h6 {
   font-size: 24px;
