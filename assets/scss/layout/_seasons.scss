@@ -406,6 +406,12 @@
 
 // faq
 .faq {
+  margin-bottom: 152px;
+
+  @include tablet-768 {
+    margin-bottom: 50px;
+  }
+
   .section_title {
     margin-bottom: 75px;
 
