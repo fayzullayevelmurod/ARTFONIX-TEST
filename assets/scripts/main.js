@@ -129,6 +129,17 @@ setupAccordion('.accardion_seasons_block', 'active');
 setupAccordion('.another_block', 'highlight');
 // accardion_seasons
 
+// faq
+const faqBlocks = document.querySelectorAll('.faq_block');
+
+faqBlocks.forEach(block => {
+    block.addEventListener('click', () => {
+        faqBlocks.forEach(btn => btn.classList.remove('active'));
+        block.classList.add('active');
+    });
+});
+// faq
+
 // select
 document.addEventListener("DOMContentLoaded", () => {
   const customSelect = document.querySelector(".custom-select");

@@ -274,7 +274,7 @@
     }
   }
 
-  &_block {
+  &_block_video{
     margin: 60px 0 44px 0;
 
     @include tablet-768 {
@@ -338,6 +338,9 @@
 
   &_block {
     button {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 30px;
       height: 30px;
 
@@ -400,3 +403,82 @@
   }
 }
 // hear_slider
+
+// faq
+.faq {
+  .section_title {
+    margin-bottom: 75px;
+
+    @include tablet-768 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &_block {
+    position: relative;
+    border-top: .5px solid $color-white;
+    padding: 25px 25px 25px 9px;
+    transition: .3s linear;
+
+    @include tablet-768 {
+      padding: 10px 10px 10px 3px;
+    }
+
+    &.active {
+      p {
+        height: 35px;
+        padding-top: 11px;
+      }
+    }
+
+    &:last-child {
+      border-bottom: .5px solid $color-white;
+    }
+
+    h6 {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 34.24px;
+      color: $color-white;
+      text-transform: uppercase;
+      margin-right: 30px;
+
+      @include tablet-768 {
+        font-size: 13px;
+        line-height: 13px;
+      }
+    }
+
+    p {
+      transition: .3s linear;
+      height: 0;
+      overflow: hidden;
+      margin-right: 30px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 17.12px;
+      color: $color-white;
+      text-transform: uppercase;
+
+      @include tablet-768 {
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+
+    svg{
+      position: absolute;
+      right: 20px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+
+      @include tablet-768 {
+        width: 9px;
+        height: 9px;
+        right: 10px;
+      }
+    }
+  }
+}
+// faq
