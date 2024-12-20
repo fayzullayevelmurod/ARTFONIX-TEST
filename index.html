@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./assets/scss/style.css">
     <!-- css link -->
 </head>
-<body>
+<body class="body_in">
     <div class="wrapper">
 
         <!-- header -->
@@ -34,7 +34,7 @@
                     <a href="/" class="header_logo">
                         <img src="./assets/images/logo/header_logo.svg" alt="">
                     </a>
-                    <nav class="header_nav">
+                    <nav class="header_nav hidden">
                         <ul>
                             <li>
                                 <a href="#">
@@ -66,6 +66,99 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="city-selector">
+                        <div class="city-selector_bg"></div>
+                        <div class="container-sm">
+                            <div class="city-selector-header">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99935 11.4186C6.26256 10.7901 5.57963 10.1011 4.95768 9.3588C4.02435 8.24405 2.91602 6.58389 2.91602 5.00189C2.91561 4.19395 3.1549 3.40405 3.60359 2.73215C4.05228 2.06026 4.69021 1.53657 5.43664 1.22737C6.18307 0.918164 7.00445 0.837346 7.79683 0.995138C8.58922 1.15293 9.31698 1.54224 9.88802 2.1138C10.2682 2.4923 10.5696 2.94245 10.7746 3.43819C10.9797 3.93392 11.0844 4.46541 11.0827 5.00189C11.0827 6.58389 9.97435 8.24405 9.04102 9.3588C8.41907 10.1011 7.73613 10.7901 6.99935 11.4186ZM6.99935 3.25189C6.53522 3.25189 6.0901 3.43626 5.76191 3.76445C5.43372 4.09264 5.24935 4.53776 5.24935 5.00189C5.24935 5.46601 5.43372 5.91113 5.76191 6.23932C6.0901 6.56751 6.53522 6.75189 6.99935 6.75189C7.46348 6.75189 7.9086 6.56751 8.23679 6.23932C8.56498 5.91113 8.74935 5.46601 8.74935 5.00189C8.74935 4.53776 8.56498 4.09264 8.23679 3.76445C7.9086 3.43626 7.46348 3.25189 6.99935 3.25189Z" fill="white"/>
+                                </svg>
+                                <p>
+                                <span id="current-city" class="city-link">Москве?</span>
+                                </p>
+                                <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 4L0.468911 0.25L6.53109 0.25L3.5 4Z" fill="white"/>
+                                </svg>
+                            </div>
+
+                            <div class="city-dropdown hidden">
+                                <input type="text" id="city-input" placeholder="Введите название города" />
+                                <div class="city-list">
+                                <div class="city-column">
+                                    <p class="city_title">Все города</p>
+                                    <p class="city-item">Москва</p>
+                                    <p class="city-item">Санкт-Петербург</p>
+                                    <p class="city-item">Альметьевск</p>
+                                    <p class="city-item">Архангельск</p>
+                                    <p class="city-item">Астрахань</p>
+                                    <p class="city-item">Барнаул</p>
+                                    <p class="city-item">Белгород</p>
+                                    <p class="city-item">Брянск</p>
+                                    <p class="city-item">Великий Новгород</p>
+                                    <p class="city-item">Владивосток</p>
+                                    <p class="city-item">Волгоград</p>
+                                    <p class="city-item">Воронеж</p>
+                                    <p class="city-item">Евпатория</p>
+                                    <p class="city-item">Екатеринбург</p>
+                                    <p class="city-item">Иваново</p>
+                                    <p class="city-item">Ижевск</p>
+                                    <p class="city-item">Иннополис</p>
+                                    <p class="city-item">Иркутск</p>
+                                    <p class="city-item">Казань</p>
+                                    <p class="city-item">Киров</p>
+                                    <p class="city-item">Королёв</p>
+                                </div>
+                                <div class="city-column">
+                                    <p class="city-item">Кострома</p>
+                                    <p class="city-item">Краснодар</p>
+                                    <p class="city-item">Красноярск</p>
+                                    <p class="city-item">Курган</p>
+                                    <p class="city-item">Курск</p>
+                                    <p class="city-item">Липецк</p>
+                                    <p class="city-item">Магнитогорск</p>
+                                    <p class="city-item">Мурманск</p>
+                                    <p class="city-item">Набережные Челны</p>
+                                    <p class="city-item">Нижневартовск</p>
+                                    <p class="city-item">Нижний Новгород</p>
+                                    <p class="city-item">Новокузнецк</p>
+                                    <p class="city-item">Новосибирск</p>
+                                    <p class="city-item">Омск</p>
+                                    <p class="city-item">Оренбург</p>
+                                    <p class="city-item">Орёл</p>
+                                    <p class="city-item">Пенза</p>
+                                    <p class="city-item">Пермь</p>
+                                    <p class="city-item">Петрозаводск</p>
+                                    <p class="city-item">Псков</p>
+                                    <p class="city-item">Ростов-на-Дону</p>
+                                    <p class="city-item">Рыбинск</p>
+                                </div>
+                                <div class="city-column">
+                                    <p class="city-item">Рязань</p>
+                                    <p class="city-item">Самара</p>
+                                    <p class="city-item">Саранск</p>
+                                    <p class="city-item">Саратов</p>
+                                    <p class="city-item">Севастополь</p>
+                                    <p class="city-item">Смоленск</p>
+                                    <p class="city-item">Сочи</p>
+                                    <p class="city-item">Ставрополь</p>
+                                    <p class="city-item">Тверь</p>
+                                    <p class="city-item">Тольятти</p>
+                                    <p class="city-item">Томск</p>
+                                    <p class="city-item">Тула</p>
+                                    <p class="city-item">Тюмень</p>
+                                    <p class="city-item">Ульяновск</p>
+                                    <p class="city-item">Уфа</p>
+                                    <p class="city-item">Хабаровск</p>
+                                    <p class="city-item">Чебоксары</p>
+                                    <p class="city-item">Челябинск</p>
+                                    <p class="city-item">Череповец</p>
+                                    <p class="city-item">Ялта</p>
+                                    <p class="city-item">Ярославль</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="header_right d-flex align-items-center">
                         <button class="header_nav_btn">
                             <img src="./assets/images/icons/burger_btn.svg" alt="">

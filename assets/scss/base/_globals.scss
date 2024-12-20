@@ -185,3 +185,116 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 // event_banner
+
+
+.city-selector {
+
+  @include tablet-768 {
+    bottom: -40px;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .city-selector-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .city-link {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20.51px;
+      color: $color-white;
+      cursor: pointer;
+    }
+  }
+
+  .city-selector_bg {
+    display: none;
+    background: rgba(9, 9, 9, 0.71);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .city-dropdown {
+    z-index: 6;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+    padding: 22px 38px;
+    width: 490px;
+    background-color: rgba(9, 9, 9, .99);
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    @include tablet-768 {
+      width: 95%;
+      padding: 16px;
+      top: 40px;
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+    #city-input {
+      width: 100%;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 17.95px;
+      color: #FFFFFF9C;
+      margin-bottom: 30px;
+      border-radius: 3px;
+      border: .5px solid $color-white;
+      height: 29px;
+      padding: 6px 13px;
+
+      &:focus {
+        outline: none;
+        border-color: #dffa70;
+      }
+    }
+
+    .city-list {
+      display: flex;
+      gap: 20px;
+
+      .city-column {
+        flex: 1;
+
+        .city_title {
+          font-family: 400;
+          color: $color-green-light;
+        }
+
+        .city-item {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 20.51px;
+          cursor: pointer;
+          transition: color 0.3s;
+          color: $color-white;
+
+          @include tablet-768 {
+            font-size: 14px;
+            line-height: 16px;
+          }
+
+          &:hover {
+            color: #dffa70;
+          }
+        }
+      }
+    }
+  }
+}

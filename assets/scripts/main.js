@@ -171,13 +171,157 @@ let swiper8 = new Swiper(".seeSwiper", {
 // comment
 
 // seasons_timer
-let seasons_timer = document.querySelector('.seasons_timer .icon');
-let seasons_timer_text = document.querySelector('.seasons_timer_text');
+document.addEventListener("DOMContentLoaded", () => {
+  let seasons_timer = document.querySelector('.seasons_timer_icon');
+  let seasons_timer_text = document.querySelector('.seasons_timer_text');
 
-seasons_timer.addEventListener('click', () => {
-  seasons_timer_text.classList.toggle('active')
-})
+  if (seasons_timer && seasons_timer_text) {
+    seasons_timer.addEventListener('click', () => {
+      seasons_timer_text.classList.toggle('active');
+    });
+  } else {
+    console.error("Error: '.seasons_timer .icon' or '.seasons_timer_text' elements not found.");
+  }
+});
 // seasons_timer
+
+// city-down
+// document.addEventListener("DOMContentLoaded", () => {
+//   const currentCity = document.getElementById("current-city");
+//   const cityDropdown = document.querySelector(".city-dropdown");
+//   const cityItems = document.querySelectorAll(".city-item");
+//   const cityInput = document.getElementById("city-input");
+
+//   currentCity.addEventListener("click", () => {
+//     cityDropdown.classList.toggle("hidden");
+//   });
+
+//   cityItems.forEach((item) => {
+//     item.addEventListener("click", () => {
+//       currentCity.textContent = item.textContent;
+//       cityDropdown.classList.add("hidden");
+//     });
+//   });
+
+//   cityInput.addEventListener("input", (e) => {
+//     const filter = e.target.value.toLowerCase();
+//     cityItems.forEach((item) => {
+//       if (item.textContent.toLowerCase().includes(filter)) {
+//         item.style.display = "block";
+//       } else {
+//         item.style.display = "none";
+//       }
+//     });
+//   });
+
+//   document.addEventListener("click", (e) => {
+//     if (!e.target.closest(".city-selector")) {
+//       cityDropdown.classList.add("hidden");
+//     }
+//   });
+// });
+
+// header-select
+function initCitySelector(config) {
+  const {
+    currentCityId,
+    cityDropdownClass,
+    cityItemClass,
+    cityInputId,
+    citySelectorClass,
+    hiddenClass = "hidden",
+  } = config;
+
+  const currentCity = document.getElementById(currentCityId);
+  const cityDropdown = document.querySelector(`.${cityDropdownClass}`);
+  const cityItems = document.querySelectorAll(`.${cityItemClass}`);
+  const cityInput = document.getElementById(cityInputId);
+  const bodyIn = document.querySelector('.body_in');
+  const citySelectorBg = document.querySelector('.city-selector_bg');
+
+  if (!currentCity || !cityDropdown || !cityItems.length || !cityInput) {
+    console.error("City selector: Missing required elements.");
+    return;
+  }
+
+  currentCity.addEventListener("click", () => {
+    cityDropdown.classList.toggle(hiddenClass);
+
+    // if (bodyIn) {
+    //   bodyIn.classList.add('hidden');
+    // }
+
+    if (citySelectorBg) {
+      citySelectorBg.classList.add('active');
+    }
+  });
+
+  cityItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      currentCity.textContent = item.textContent;
+      cityDropdown.classList.add(hiddenClass);
+
+      // if (bodyIn) {
+      //   bodyIn.classList.remove('hidden');
+      // }
+
+      if (citySelectorBg) {
+        citySelectorBg.classList.remove('active');
+      }
+    });
+  });
+
+  cityInput.addEventListener("input", (e) => {
+    const filter = e.target.value.toLowerCase();
+    cityItems.forEach((item) => {
+      if (item.textContent.toLowerCase().includes(filter)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(`.${citySelectorClass}`)) {
+      cityDropdown.classList.add(hiddenClass);
+
+      if (bodyIn) {
+        bodyIn.classList.remove('active');
+      }
+
+      if (citySelectorBg) {
+        citySelectorBg.classList.remove('active');
+      }
+    }
+  });
+
+  if (citySelectorBg) {
+    citySelectorBg.addEventListener('click', () => {
+      cityDropdown.classList.add(hiddenClass);
+
+      if (bodyIn) {
+        bodyIn.classList.remove('active');
+      }
+
+      citySelectorBg.classList.remove('active');
+    });
+  }
+}
+
+// Example usage
+document.addEventListener("DOMContentLoaded", () => {
+  initCitySelector({
+    currentCityId: "current-city",
+    cityDropdownClass: "city-dropdown",
+    cityItemClass: "city-item",
+    cityInputId: "city-input",
+    citySelectorClass: "city-selector",
+    hiddenClass: "hidden",
+  });
+});
+// city-down
+// header-select
 
 // accardion_seasons
 function setupAccordion(selector, activeClass) {
