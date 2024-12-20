@@ -80,6 +80,8 @@
       .upcoming_concerts_block_bg {
         display: block;
         z-index: 2;
+        left: -20px;
+        width: calc(100% + 40px);
       }
 
       a {
@@ -274,6 +276,8 @@
       .upcoming_concerts_block_bg {
         z-index: 2;
         display: block;
+        left: -20px;
+        width: calc(100% + 40px);
       }
 
       a {
