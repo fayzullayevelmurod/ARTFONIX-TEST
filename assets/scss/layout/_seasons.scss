@@ -203,6 +203,66 @@
       width: 100%;
     }
   }
+
+  .seasons_timer {
+    position: absolute;
+    bottom: 36px;
+    right: 55px;
+    z-index: 3;
+
+
+    @include tablet-768 {
+      right: 19px;
+      bottom: 20px;
+    }
+
+    img {
+      @include tablet-768 {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    .timer {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 20px;
+      font-weight: 450;
+      line-height: 25px;
+      color: $color-white;
+
+      @include tablet-768 {
+        gap: 8px;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+
+    .icon {
+      margin-left: 34px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: rgba(111, 111, 111, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 40px;
+      color: $color-white;
+
+      @include tablet-768 {
+        width: 16px;
+        height: 16px;
+        margin-left: 11px;
+      }
+    }
+  }
 }
 // seasons_home
 
