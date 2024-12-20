@@ -143,6 +143,33 @@ let swiper7 = new Swiper(".commentSwiper", {
 });
 // comment
 
+// comment
+let swiper8 = new Swiper(".seeSwiper", {
+  slidesPerView: 1.7,
+  spaceBetween: 30,
+  centeredSlides: true,
+  initialSlide: 1,
+  navigation: {
+    nextEl: ".see-button-next",
+    prevEl: ".see-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    993: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 1.5,
+      spaceBetween: 70,
+    },
+  },
+});
+// comment
+
 // accardion_seasons
 function setupAccordion(selector, activeClass) {
   const buttons = document.querySelectorAll(selector);
