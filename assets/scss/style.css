@@ -448,7 +448,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .section_title {
   font-size: 64px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 61.44px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -462,7 +462,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .main_text {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 18.4px;
   color: #6F6F6F;
 }
@@ -482,7 +482,7 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 3px;
   border-radius: 3px;
   width: 208px;
-  height: 29px;
+  height: 35px;
   background-color: #DFFA70;
   transition: 0.3s linear;
   border: 1px solid transparent;
@@ -3667,7 +3667,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 15.38px;
   color: #FFFFFF;
@@ -3682,8 +3682,8 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .contact_form .custom-checkbox .checkbox-mark {
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
   border: 1px solid #FFFFFF;
   display: flex;
   justify-content: center;
@@ -3691,11 +3691,12 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-right: 10px;
   position: relative;
   transition: all 0.3s ease;
+  margin-top: 2px;
 }
 .contact_form .custom-checkbox .checkbox-mark::after {
   content: "✖";
-  font-size: 10px;
-  color: #f00;
+  font-size: 12px;
+  color: #DFFA70;
   display: none;
 }
 .contact_form .custom-checkbox input:checked + .checkbox-mark::after {

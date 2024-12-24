@@ -115,7 +115,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 15.38px;
     color: $color-white;
@@ -130,8 +130,8 @@
     }
 
     .checkbox-mark {
-      width: 11px;
-      height: 11px;
+      width: 15px;
+      height: 15px;
       border: 1px solid $color-white;
       display: flex;
       justify-content: center;
@@ -139,11 +139,12 @@
       margin-right: 10px;
       position: relative;
       transition: all 0.3s ease;
+      margin-top: 2px;
 
       &::after {
         content: "✖";
-        font-size: 10px;
-        color: #f00;
+        font-size: 12px;
+        color: #DFFA70;
         display: none;
       }
     }
