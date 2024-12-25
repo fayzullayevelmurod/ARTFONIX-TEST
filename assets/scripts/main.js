@@ -175,7 +175,7 @@ function enableHorizontalScroll() {
 
   swiperContainers.forEach(function(container) {
     container.addEventListener('wheel', function(e) {
-      if (e.shiftKey) { 
+      if (e.shiftKey) {
         e.preventDefault();
         container.scrollLeft += e.deltaY;
       }
@@ -412,3 +412,21 @@ document.querySelectorAll('.comment_more_btn').forEach(function(button) {
   });
 });
 // comment_text
+
+// header
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = document.querySelectorAll(".header");
+  const stickyClass = "sticky-header";
+  const scrollTrigger = 100;
+
+  window.addEventListener("scroll", () => {
+    headers.forEach((header) => {
+      if (window.scrollY > scrollTrigger) {
+        header.classList.add(stickyClass);
+      } else {
+        header.classList.remove(stickyClass);
+      }
+    });
+  });
+});
+// header

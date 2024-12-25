@@ -129,3 +129,28 @@
     }
   }
 }
+
+.sticky-header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: $color-dark; // Fon rangini o'zgartirish (agar kerak bo'lsa)
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Soyabon
+  animation: slideDown 0.3s ease-in-out;
+
+  @include tablet-768() {
+    padding: 10px 0;
+  }
+}
+
+// Silliq tushish animatsiyasi
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

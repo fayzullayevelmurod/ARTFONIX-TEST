@@ -735,6 +735,30 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.sticky-header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #090909;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .sticky-header {
+    padding: 10px 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .home {
   background-image: url("../images/home_img.png");
   background-repeat: no-repeat;
