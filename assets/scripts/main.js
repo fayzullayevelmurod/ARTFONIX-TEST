@@ -170,6 +170,23 @@ let swiper8 = new Swiper(".seeSwiper", {
 });
 // comment
 
+function enableHorizontalScroll() {
+  const swiperContainers = document.querySelectorAll('.swiper-container');
+
+  swiperContainers.forEach(function(container) {
+    container.addEventListener('wheel', function(e) {
+      if (e.shiftKey) { 
+        e.preventDefault();
+        container.scrollLeft += e.deltaY;
+      }
+    });
+  });
+}
+
+// Sahifa yuklanganda, barcha slayderlar uchun gorizontal skrollni faollashtirish
+document.addEventListener('DOMContentLoaded', function() {
+  enableHorizontalScroll(); // Funksiyani chaqirish
+});
 // seasons_timer
 document.addEventListener("DOMContentLoaded", () => {
   let seasons_timer = document.querySelector('.seasons_timer_icon');
