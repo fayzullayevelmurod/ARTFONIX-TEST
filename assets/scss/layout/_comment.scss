@@ -136,7 +136,7 @@
       }
     }
 
-    p {
+    .comment-text {
       font-family: $NunitoSans;
       font-size: 14px;
       font-weight: 400;
@@ -153,6 +153,11 @@
         font-size: 12px;
         line-height: 16px;
       }
+    }
+
+    .comment-text.expanded {
+      -webkit-line-clamp: unset;
+      display: block;
     }
   }
 

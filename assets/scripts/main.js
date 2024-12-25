@@ -377,3 +377,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // select
+
+
+// comment_text
+document.querySelectorAll('.comment_more_btn').forEach(function(button) {
+  button.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    var commentText = this.closest('.comment_card').querySelector('.comment-text');
+    commentText.classList.toggle('expanded');
+
+    if (commentText.classList.contains('expanded')) {
+      this.textContent = 'Скрыть';
+    } else {
+      this.textContent = 'Читать полностью';
+    }
+  });
+});
+// comment_text
