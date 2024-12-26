@@ -1724,6 +1724,61 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 47px 0 24px 0;
   }
 }
+.seasons_home_text_top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.seasons_home_text_left {
+  text-align: left;
+}
+.seasons_home_text_left h4 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #DFFA70;
+  text-transform: uppercase;
+}
+.seasons_home_text_left h6 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.seasons_home_text_left p {
+  max-width: 190px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15.9px;
+  color: #FFFFFF;
+}
+.seasons_home_text_right {
+  text-align: right;
+}
+.seasons_home_text_right h4 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #DFFA70;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 10.4px rgba(0, 0, 0, 0.39);
+}
+.seasons_home_text_right h5 {
+  font-size: 77px;
+  font-weight: 600;
+  line-height: 80px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 10.4px rgba(0, 0, 0, 0.39);
+}
+.seasons_home_text_right h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34.68px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 10.4px rgba(0, 0, 0, 0.39);
+}
 .seasons_home_center {
   margin-top: 205px;
   max-width: 565px;
