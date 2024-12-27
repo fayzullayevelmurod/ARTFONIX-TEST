@@ -1,11 +1,9 @@
 // header_nav
 let header_nav = document.querySelector('.header_nav');
 let header_nav_btn = document.querySelector('.header_nav_btn');
-let body_in = document.querySelector('.body_in');
 
 header_nav_btn.addEventListener('click', () => {
   header_nav.classList.toggle('active');
-  body_in.classList.toggle('hidden');
 })
 // header_nav
 
@@ -170,23 +168,52 @@ let swiper8 = new Swiper(".seeSwiper", {
 });
 // comment
 
-function enableHorizontalScroll() {
-  const swiperContainers = document.querySelectorAll('.swiper-container');
+document.addEventListener("DOMContentLoaded", () => {
+  // Loyihadagi barcha sliderlarni topish
+  const sliders = document.querySelectorAll(".swiper");
 
-  swiperContainers.forEach(function(container) {
-    container.addEventListener('wheel', function(e) {
-      if (e.shiftKey) {
-        e.preventDefault();
-        container.scrollLeft += e.deltaY;
+  // Barcha sliderlar uchun Swiper instansiyalarini yaratish
+  sliders.forEach((slider) => {
+    const swiper = new Swiper(slider, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"), // O'ziga mos navigatsiya tugmasi
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+    });
+
+    let isShiftPressed = false; // Shift tugmasining holatini kuzatish uchun
+
+    // Shift tugmasi bosilganini aniqlash
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Shift") {
+        isShiftPressed = true;
+      }
+    });
+
+    // Shift tugmasi qo'yib yuborilganini aniqlash
+    document.addEventListener("keyup", (e) => {
+      if (e.key === "Shift") {
+        isShiftPressed = false;
+      }
+    });
+
+    // Sichqoncha scroll harakatini kuzatish
+    slider.addEventListener("wheel", (e) => {
+      if (isShiftPressed) {
+        e.preventDefault(); // Standart scroll harakatini to'xtatish
+        if (e.deltaY > 0) {
+          swiper.slideNext(); // Scroll pastga — keyingi slaydga o'tish
+        } else {
+          swiper.slidePrev(); // Scroll yuqoriga — oldingi slaydga o'tish
+        }
       }
     });
   });
-}
-
-// Sahifa yuklanganda, barcha slayderlar uchun gorizontal skrollni faollashtirish
-document.addEventListener('DOMContentLoaded', function() {
-  enableHorizontalScroll(); // Funksiyani chaqirish
 });
+
+
 // seasons_timer
 document.addEventListener("DOMContentLoaded", () => {
   let seasons_timer = document.querySelector('.seasons_timer_icon');
